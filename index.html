@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Countdown Glow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Countdown Glow</h1>
+    <p>Event timer · local save · neon digits</p>
+  </header>
+  <main>
+    <section class="panel form">
+      <label>Title <input id="title" value="Launch day" maxlength="40" /></label>
+      <label>Target <input id="target" type="datetime-local" /></label>
+      <button type="button" id="start" class="accent">Start</button>
+    </section>
+    <p id="label" class="label">Launch day</p>
+    <div id="digits" class="digits">
+      <div><span id="d">00</span><small>days</small></div>
+      <div><span id="h">00</span><small>hrs</small></div>
+      <div><span id="m">00</span><small>min</small></div>
+      <div><span id="s">00</span><small>sec</small></div>
+    </div>
+    <p id="status" class="status"></p>
+  </main>
+  <footer>Crafted by <strong>Juliana Chantre Astudillo</strong></footer>
+  <script src="app.js"></script>
+</body>
+</html>
